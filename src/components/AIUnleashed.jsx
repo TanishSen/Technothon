@@ -7,14 +7,22 @@ function AIUnleashed() {
       <div className="ai-unleashed-container">
         {/* Image */}
         <div className="ai-unleashed-image">
-          <img src="/images/ai-unleashed.jpg" alt="AI Unleashed" />
+          <img
+            className="scroll-animate-image"
+            src="/images/ai-unleashed.jpg"
+            alt="AI Unleashed"
+          />
         </div>
         {/* Text */}
         <div className="ai-unleashed-text">
-          <h2>AI UNLEASHED</h2>
+          <h2 className="scroll-animate-text">AI UNLEASHED</h2>
           <div className="ai-unleashed-projects">
-            {projects.map((project) => (
-              <div key={project.id} className="project-card glassmorphism">
+            {projects.map((project, index) => (
+              <div
+                key={project.id}
+                className={`project-card glassmorphism scroll-animate-card`}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
               </div>

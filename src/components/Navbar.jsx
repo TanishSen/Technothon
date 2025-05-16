@@ -5,9 +5,9 @@ function Navbar() {
   return (
     <nav className="navbar glassmorphism">
       {/* Logo */}
-      <div className="navbar-logo">TECHTHON</div>
+      <div className="navbar-logo scroll-animate-left">TECHTHON</div>
       {/* Navigation links */}
-      <div className="navbar-links">
+      <div className="navbar-links scroll-animate-right">
         <a href="#about">About</a>
         <a href="#events">Events</a>
         <a href="#innovations">Innovations</a>

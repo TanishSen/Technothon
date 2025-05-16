@@ -4,12 +4,16 @@ import "../styles/glassmorphism.css"; // Import glassmorphism styles
 function UpcomingEvents() {
   return (
     <section id="upcoming" className="upcoming-events">
-      <h2>Upcoming Events</h2>
+      <h2 className="scroll-animate-text">Upcoming Events</h2>
       <div className="upcoming-events-container">
         {/* Event List */}
         <div className="upcoming-events-list">
-          {upcomingEvents.map((event) => (
-            <div key={event.id} className="event-item glassmorphism">
+          {upcomingEvents.map((event, index) => (
+            <div
+              key={event.id}
+              className="event-item glassmorphism scroll-animate-card"
+              style={{ animationDelay: `${index * 0.15}s` }}
+            >
               <h3>{event.title}</h3>
               <p>{event.description}</p>
               <p className="event-date">{event.date}</p>
@@ -19,11 +23,17 @@ function UpcomingEvents() {
         {/* Images */}
         <div className="upcoming-events-images">
           {upcomingEventImages.map((image, index) => (
-            <img key={index} src={image} alt="Upcoming Event" />
+            <img
+              key={index}
+              src={image}
+              alt="Upcoming Event"
+              className="scroll-animate-image"
+              style={{ animationDelay: `${index * 0.2}s` }}
+            />
           ))}
         </div>
       </div>
-      <div className="view-all">
+      <div className="view-all scroll-animate-text">
         <a href="#">View All</a>
       </div>
     </section>

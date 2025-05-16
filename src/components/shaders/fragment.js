@@ -1,25 +1,5 @@
-// s4 transition fragment shader from creative-bay
-// export default `
-// precision highp float;
-
-// uniform float uProgress;
-// uniform float uTime;
-// uniform sampler2D uTexture1;
-// uniform sampler2D uTexture2;
-// varying vec2 vUv;
-
-// void main() {
-//   float disp = sin(uTime + vUv.x * 3.1415) * 0.1 * uProgress;
-//   vec2 uv1 = vUv + vec2(disp, 0.0);
-//   vec2 uv2 = vUv - vec2(disp, 0.0);
-//   vec4 tex1 = texture2D(uTexture1, uv1);
-//   vec4 tex2 = texture2D(uTexture2, uv2);
-//   float p = smoothstep(0.0, 1.0, uProgress);
-//   gl_FragColor = mix(tex1, tex2, p);
-// }
-// `;
-
-const fragmentShader = `
+// components/shaders/fragment.js
+export default `
 precision highp float;
 
 uniform float uProgress;
@@ -75,5 +55,3 @@ void main() {
   gl_FragColor = finalColor;
 }
 `;
-
-export default fragmentShader;

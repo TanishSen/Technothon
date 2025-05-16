@@ -2,11 +2,19 @@
 function OtherEvents() {
   return (
     <section id="events" className="other-events">
-      <h2>Other Events</h2>
+      <h2 className="scroll-animate-text">Other Events</h2>
       <div className="events-grid">
-        {otherEvents.map((event) => (
-          <div key={event.id} className="event-card">
-            <img src={event.image} alt={event.title} />
+        {otherEvents.map((event, index) => (
+          <div
+            key={event.id}
+            className="event-card scroll-animate-card"
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            <img
+              className="scroll-animate-image"
+              src={event.image}
+              alt={event.title}
+            />
             <div className="event-overlay">
               <h3>{event.title}</h3>
             </div>
