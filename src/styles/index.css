@@ -1,3 +1,6 @@
+/* Import Francois One font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+
 /* Global styles */
 * {
   margin: 0;
@@ -10,6 +13,18 @@ body {
   background-color: #000000; /* Dark background as seen in the webpage */
   color: white;
   line-height: 1.6;
+}
+
+/* Apply Francois One font to all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Francois One", sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 400; /* Francois One typically looks better with default weight */
 }
 
 a {

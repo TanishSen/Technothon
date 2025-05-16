@@ -48,6 +48,12 @@
   will-change: opacity, transform;
 }
 
+/* Font utility class for easy application of Francois One */
+.francois-font {
+  font-family: "Francois One", sans-serif;
+  letter-spacing: 0.02em;
+}
+
 /* Define the animation keyframes */
 
 @keyframes text-appear {
@@ -55,6 +61,23 @@
     opacity: 0;
     translate: 0 4rem;
   }
+}
+
+/* Apply Francois One font to all animated headings to ensure consistency */
+.scroll-animate-text h1,
+.scroll-animate-text h2,
+.scroll-animate-text h3,
+.scroll-animate-text h4,
+.scroll-animate-text h5,
+.scroll-animate-text h6,
+h1.scroll-animate-text,
+h2.scroll-animate-text,
+h3.scroll-animate-text,
+h4.scroll-animate-text,
+h5.scroll-animate-text,
+h6.scroll-animate-text {
+  font-family: "Francois One", sans-serif;
+  letter-spacing: 0.02em;
 }
 
 @keyframes image-appear {

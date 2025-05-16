@@ -795,16 +795,15 @@ function Hero() {
         }}
       >
         <h1
-          className="scroll-animate-text"
+          className="scroll-animate-text francois-font"
           style={{
             color: "#fff",
             fontSize: "clamp(3rem, 8vw, 5.5rem)", // Larger text as in reference
-            fontWeight: 700,
+            fontWeight: 400, // Francois One looks better with default weight
             letterSpacing: "0.05em",
             lineHeight: 1.1, // Tighter line height like in reference
             margin: 0,
             textTransform: "uppercase",
-            fontFamily: "sans-serif",
             transition:
               "transform 1.2s cubic-bezier(0.19, 1, 0.22, 1), opacity 1.2s ease",
           }}

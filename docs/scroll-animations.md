@@ -21,6 +21,18 @@ The following animation classes can be added to elements:
 - `scroll-animate-right`: For elements that animate from right to left
 - `scroll-animate-stagger`: For staggered animations in lists
 
+## Typography
+
+The website uses the following typography:
+
+- **Headings**: Francois One (Google Font)
+  - Used for all headings (h1-h6)
+  - Applied automatically through global CSS
+  - Also available as a utility class: `francois-font`
+- **Body Text**: Arial, sans-serif
+  - Used for paragraphs and general text content
+- `scroll-animate-stagger`: For staggered animations in lists
+
 ### Example Usage
 
 ```jsx
