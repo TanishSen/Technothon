@@ -1,0 +1,4 @@
+/* Gradient backgrounds (can be used if images are unavailable) */
+.gradient-bg {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+}
