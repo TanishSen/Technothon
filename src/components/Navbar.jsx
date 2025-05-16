@@ -5,11 +5,9 @@ function Navbar() {
   return (
     <nav className="navbar glassmorphism">
       {/* Logo */}
-      <div className="navbar-logo francois-font scroll-animate-left">
-        TECHNOTHON
-      </div>
+      <div className="navbar-logo francois-font ">TECHNOTHON</div>
       {/* Navigation links */}
-      <div className="navbar-links francois-font scroll-animate-right">
+      <div className="navbar-links francois-font ">
         <a href="#about" className="nav-link">
           ABOUT US
         </a>

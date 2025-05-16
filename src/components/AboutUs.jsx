@@ -8,7 +8,7 @@ function AboutUs() {
         tech showcase, explore or learn – this platform is your launchpad.
       </p>
       <br />
-      <p className="scroll-animate-text">
+      <p className="scroll-animate-text" style={{ color: "#a0a0a0" }}>
         A dynamic platform for showcasing student innovations in AI and IoT.
         Organized by batch and backed by modern design, this site lets you
         register for events, view cutting-edge projects, and stay updated on
