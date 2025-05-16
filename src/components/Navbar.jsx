@@ -5,13 +5,13 @@ function Navbar() {
   return (
     <nav className="navbar glassmorphism">
       {/* Logo */}
-      <div className="navbar-logo scroll-animate-left">TECHTHON</div>
+      <div className="navbar-logo">TECHNOTHON</div>
       {/* Navigation links */}
-      <div className="navbar-links scroll-animate-right">
-        <a href="#about">About</a>
-        <a href="#events">Events</a>
-        <a href="#innovations">Innovations</a>
-        <a href="#upcoming">Upcoming Events</a>
+      <div className="navbar-links">
+        <a href="#about">ABOUT US</a>
+        <a href="#events">EVENTS</a>
+        <a href="#innovations">INNOVATIONS</a>
+        <a href="#upcoming">UPCOMING EVENTS</a>
       </div>
     </nav>
   );

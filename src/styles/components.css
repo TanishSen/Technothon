@@ -4,15 +4,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: fixed;
+  position: fixed; /* Fixes the navbar at the top */
   width: 100%;
   top: 0;
   z-index: 100;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
 }
 
 .navbar-logo {
   font-size: 1.5rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .navbar-links {
@@ -23,6 +25,11 @@
 .navbar-links a {
   font-size: 0.9rem;
   text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ccc;
 }
 
 /* Styles for Hero */
@@ -287,6 +294,22 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack logo and links vertically on smaller screens */
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .navbar-links a {
+    font-size: 0.8rem;
+  }
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
@@ -298,26 +321,22 @@
   .ai-unleashed-text h2 {
     font-size: 2rem;
   }
-
-  .navbar-links {
-    gap: 0.5rem;
-  }
-
-  .navbar-links a {
-    font-size: 0.8rem;
-  }
 }
 
 @media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+
+  .navbar-links a {
+    font-size: 0.7rem;
+  }
+
   .hero-content {
     padding-left: 1rem;
   }
 
   .hero-content h1 {
     font-size: 2rem;
-  }
-
-  .navbar-logo {
-    font-size: 1.2rem;
   }
 }

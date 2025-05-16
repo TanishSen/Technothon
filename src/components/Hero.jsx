@@ -615,7 +615,7 @@ function Hero() {
         }}
       >
         {/* Logo/Brand */}
-        <div className="logo">
+        {/* <div className="logo">
           <h2
             style={{
               color: "#ffffff",
@@ -628,17 +628,17 @@ function Hero() {
           >
             TECHNOTHON
           </h2>
-        </div>
+        </div> */}
 
         {/* Navigation links */}
-        <div
+        {/* <div
           className="nav-links"
           style={{
             display: "flex",
             gap: "2rem",
           }}
-        >
-          {["ABOUT US", "EVENTS", "INNOVATIONS", "UPCOMING EVENTS"].map(
+        > */}
+        {/* {["ABOUT US", "EVENTS", "INNOVATIONS", "UPCOMING EVENTS"].map(
             (item) => (
               <a
                 key={item}
@@ -660,7 +660,7 @@ function Hero() {
               </a>
             )
           )}
-        </div>
+        </div> */}
       </div>
 
       {/* Left/right navigation arrows (optional) */}
@@ -668,8 +668,8 @@ function Hero() {
         className="slider-navigation"
         style={{
           position: "absolute",
-          bottom: "35vh", // Position in the middle section
-          left: "3rem",
+          bottom: "45vh", // Position in the middle section
+          left: "6rem",
           display: "flex",
           gap: "1rem",
           zIndex: 4,
@@ -695,7 +695,7 @@ function Hero() {
         >
           <div
             style={{
-              width: "2rem",
+              width: "6rem",
               height: "2px",
               background: "#fff",
               position: "relative",
@@ -746,7 +746,7 @@ function Hero() {
         >
           <div
             style={{
-              width: "2rem",
+              width: "6rem",
               height: "2px",
               background: "#fff",
               position: "relative",

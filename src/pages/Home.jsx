@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <AboutUs />
       <AIUnleashed />
