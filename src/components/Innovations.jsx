@@ -4,7 +4,7 @@ import "../styles/glassmorphism.css"; // Import glassmorphism styles
 function Innovations() {
   return (
     <section id="innovations" className="innovations">
-      <h2 className="scroll-animate-text">Innovations</h2>
+      <h2 className="scroll-animate-text">INNOVATIONS</h2>
       <p className="scroll-animate-text">Projects that shape tomorrow</p>
       {/* Placeholder for project showcase */}
       <div className="innovations-placeholder glassmorphism scroll-animate-card">

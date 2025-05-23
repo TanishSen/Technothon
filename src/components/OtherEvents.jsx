@@ -2,7 +2,7 @@
 function OtherEvents() {
   return (
     <section id="events" className="other-events">
-      <h2 className="scroll-animate-text">Other Events</h2>
+      <h2 className="scroll-animate-text">OTHER EVENTS</h2>
       <div className="events-grid">
         {otherEvents.map((event, index) => (
           <div

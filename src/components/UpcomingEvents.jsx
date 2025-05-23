@@ -4,7 +4,7 @@ import "../styles/glassmorphism.css"; // Import glassmorphism styles
 function UpcomingEvents() {
   return (
     <section id="upcoming" className="upcoming-events">
-      <h2 className="scroll-animate-text">Upcoming Events</h2>
+      <h2 className="scroll-animate-text">UPCOMING EVENTS</h2>
       <div className="upcoming-events-container">
         {/* Event List */}
         <div className="upcoming-events-list">
@@ -33,9 +33,9 @@ function UpcomingEvents() {
           ))}
         </div>
       </div>
-      <div className="view-all scroll-animate-text">
+      {/* <div className="view-all scroll-animate-text">
         <a href="#">View All</a>
-      </div>
+      </div> */}
     </section>
   );
 }

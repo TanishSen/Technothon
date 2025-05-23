@@ -14,7 +14,7 @@ function AboutUs() {
         register for events, view cutting-edge projects, and stay updated on
         your college's tech ecosystem – all in one place.
       </p>
-      <h2 className="scroll-animate-text">About Us</h2>
+      <h2 className="scroll-animate-text">ABOUT US</h2>
     </section>
   );
 }

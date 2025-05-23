@@ -15,9 +15,10 @@ function Home() {
       <Hero />
       <AboutUs />
       <AIUnleashed />
+      <UpcomingEvents />
       <OtherEvents />
       <Innovations />
-      <UpcomingEvents />
+
       <Footer />
     </div>
   );
