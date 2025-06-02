@@ -1,7 +1,6 @@
-// About Us section component
-function AboutUs() {
+function About() {
   return (
-    <section id="aboutUs" className="about-us">
+    <section id="about" className="about-us">
       <p className="scroll-animate-text">
         Step into a world of innovation where students bring technology to life!
         Discover, be a part of a tech-driven community sharing the events and
@@ -14,9 +13,14 @@ function AboutUs() {
         register for events, view cutting-edge projects, and stay updated on
         your college's tech ecosystem – all in one place.
       </p>
-      <h2 className="scroll-animate-text">ABOUT US</h2>
+      <h2 className="scroll-animate-text">ABOUT</h2>
     </section>
   );
 }
 
-export default AboutUs;
+export default About;
+
+//ABOUT US PAGE:
+
+// This code defines an About component that renders a section with information about a tech platform for students.
+// It includes a brief introduction and a description of the platform's features, styled with CSS classes for animation.
