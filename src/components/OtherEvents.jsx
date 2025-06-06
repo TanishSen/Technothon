@@ -1,4 +1,7 @@
 // Other Events section component
+import { BorderBeam } from "./BorderBeam";
+import { otherEvents } from "../data/events";
+// import { otherEvents } from "../data/events";
 function OtherEvents() {
   return (
     <section id="events" className="other-events">
@@ -10,6 +13,7 @@ function OtherEvents() {
             className="event-card scroll-animate-card"
             style={{ animationDelay: `${index * 0.1}s` }}
           >
+            <BorderBeam />
             <img
               className="scroll-animate-image"
               src={event.image}
@@ -26,6 +30,5 @@ function OtherEvents() {
 }
 
 // Import event data
-import { otherEvents } from "../data/events";
 
 export default OtherEvents;

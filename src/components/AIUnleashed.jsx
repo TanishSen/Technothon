@@ -72,7 +72,4 @@ function AIUnleashed() {
   );
 }
 
-// Import project data
-import { projects } from "../data/projects";
-
 export default AIUnleashed;

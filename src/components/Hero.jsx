@@ -27,6 +27,7 @@ function Hero() {
     transitioning: false,
     lastTime: 0,
   });
+  const cycleImagesRef = useRef();
 
   useEffect(() => {
     const container = containerRef.current;
@@ -165,6 +166,9 @@ function Hero() {
         },
       });
     }
+
+    // Assign function to ref for external access
+    cycleImagesRef.current = cycleImages;
 
     let resizeTimeout;
     const handleResize = () => {
@@ -330,7 +334,7 @@ function Hero() {
             clearTimeout(transitionTimeout.current);
             nextIndexRef.current =
               (currentIndexRef.current - 1 + images.length) % images.length;
-            cycleImages();
+            cycleImagesRef.current?.();
           }}
           style={{
             background: "none",
@@ -380,7 +384,7 @@ function Hero() {
             clearTimeout(transitionTimeout.current);
             nextIndexRef.current =
               (currentIndexRef.current + 1) % images.length;
-            cycleImages();
+            cycleImagesRef.current?.();
           }}
           style={{
             background: "none",

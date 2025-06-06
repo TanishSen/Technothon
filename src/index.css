@@ -1,6 +1,14 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 /* Import all CSS files */
 @import url("./styles/index.css");
 @import url("./styles/glassmorphism.css");
 @import url("./styles/gradients.css");
 @import url("./styles/components.css");
 @import url("./styles/scroll-animations.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
